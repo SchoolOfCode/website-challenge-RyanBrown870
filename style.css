@@ -4,5 +4,50 @@ background image gradient,
 coloured foreground for text
 animate name, slide in from side. Flashing full stop
 
-
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+  height: 5rem;
+}
+
+#greeting {
+  color: white;
+  position: absolute;
+  font-size: 7rem;
+  left: 5rem;
+  top: 7rem;
+}
+
+#landing-title {
+  height: 46rem;
+  position: relative;
+  background: #00467f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a5cc82,
+    #00467f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a5cc82,
+    #00467f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* laptops */
+@media (max-width: 1199px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* smartphones */
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
