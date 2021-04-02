@@ -28,7 +28,7 @@ body {
   color: white;
   position: absolute;
   font-size: 7rem;
-  left: 5rem;
+  left: 7rem;
   top: 7rem;
 }
 
@@ -63,19 +63,19 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.item {
+  flex-grow: 1;
+  width: 2rem;
+}
+
+#summary-wrapper {
+  flex-grow: 3;
+}
+
 /* laptops */
 @media (max-width: 1199px) {
   html {
     font-size: 16px;
-  }
-
-  .item {
-    flex-grow: 1;
-    width: 2rem;
-  }
-
-  #summary-wrapper {
-    flex-grow: 3;
   }
 }
 
