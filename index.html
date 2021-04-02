@@ -4,39 +4,92 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Profile</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <!-- To do: title, logo, tagline -->
-        <header>
-            <div id="banner"></div>
-        </header>
-        
-        <!-- To do: about me, image, skills, interests, github -->
-        <article>
-            <div id="landing-title">
-                <h1 id="greeting">
-                    Hi, I'm Profile Name
-                    <span id="stop">.</span>
-                </h1> 
-            </div>
-        
-        
-        </article>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
 
-        <footer>
-        <!-- copyright, terms, contact etc -->
-        </footer>
-    </body>
+    <!-- To do: title, logo, tagline -->
+    <!-- To do: need more padding around nav -->
+    <nav class="flex-container" id="banner">
+      <p class="nav" id="logo">Logo</p>
+      <div class="flex-container" id="nav-wrapper">
+        <ul>
+          <li class="nav">Nav</li>
+          <li class="nav">Links</li>
+          <li class="nav">Here</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- To do: about me, image, skills, interests, github -->
+    <!-- To do: Need text further left -->
+    <header>
+      <div id="landing-title">
+        <h1 id="greeting">
+          Hi, I'm Jordan Linton
+          <span id="stop">.</span>
+        </h1>
+      </div>
+    </header>
+
+    <main class="flex-container" id="summary-section">
+      <div class="item"></div>
+      <div class="item" id="summary-wrapper">
+        <h2 class="summary" id="summary-title">I'm a web developer</h2>
+        <h3 class="summary" id="summary-tagline">
+          Based in Birmingham, UK, I'm flexing my web development skills and
+          starting an exciting journey.
+        </h3>
+        <div id="learn-more">
+          <a class="button background-transition" href="#about-me"
+            >Learn more</a
+          >
+        </div>
+      </div>
+      <div class="item"></div>
+    </main>
+
+    <article class="flex-container" id="card-wrapper">
+      <div class="card">
+        <a class="card-img" href="#about-me">
+          <div id="card-main-1">
+            <!-- Photo by Jill Evans from Pexels https://www.pexels.com/@jill?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels -->
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a class="card-img" href="#interests">
+          <div id="card-main-2">
+            <!-- Photo by Ivan Samkov from Pexels https://www.pexels.com/photo/weight-plates-in-different-colors-4164772/ -->
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a class="card-img" href="#goals">
+          <div id="card-main-3">
+            <!-- Photo by Sam Nam from Pexels https://www.pexels.com/photo/macbook-pro-beside-clear-glass-jar-1204148/ -->
+          </div>
+        </a>
+      </div>
+    </article>
+
+    <footer>
+      <!-- copyright, terms, contact etc -->
+    </footer>
+  </body>
 </html>
