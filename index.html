@@ -26,9 +26,11 @@
     <nav class="flex-container" id="banner">
       <p class="nav" id="logo">Logo</p>
       <div class="flex-container" id="nav-wrapper">
-        <p class="nav">Nav</p>
-        <p class="nav">Links</p>
-        <p class="nav">Here</p>
+        <ul>
+          <li class="nav">Nav</li>
+          <li class="nav">Links</li>
+          <li class="nav">Here</li>
+        </ul>
       </div>
     </nav>
 
@@ -43,16 +45,22 @@
       </div>
     </header>
 
-    <article class="flex-container" id="summary-section">
+    <main class="flex-container" id="summary-section">
       <div class="item"></div>
       <div class="item" id="summary-wrapper">
-        <h2>
-          Welcome to my profile, I hope you enjoy your visit, learning all about
-          me and my developer journey.
-        </h2>
+        <h2 class="summary" id="summary-title">I'm a web developer</h2>
+        <h3 class="summary" id="summary-tagline">
+          Based in Birmingham, UK, I'm flexing my web development skills and
+          starting an exciting journey.
+        </h3>
+        <div id="learn-more">
+          <a class="button background-transition" href="#about-me"
+            >Learn more</a
+          >
+        </div>
       </div>
       <div class="item"></div>
-    </article>
+    </main>
 
     <footer>
       <!-- copyright, terms, contact etc -->
