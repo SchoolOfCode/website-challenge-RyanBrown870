@@ -24,12 +24,18 @@
     <!-- To do: title, logo, tagline -->
     <!-- To do: need more padding around nav -->
     <nav class="flex-container" id="banner">
-      <p class="nav" id="logo">Logo</p>
+      <p class="nav" id="logo">J. Linton</p>
       <div class="flex-container" id="nav-wrapper">
         <ul>
-          <li class="nav">Nav</li>
-          <li class="nav">Links</li>
-          <li class="nav">Here</li>
+          <a href="#about-me"
+            ><li class="nav"><h2 class="nav-header">About Me</h2></li></a
+          >
+          <a href="#interests"
+            ><li class="nav"><h2 class="nav-header">Interests</h2></li></a
+          >
+          <a href="#goals"
+            ><li class="nav"><h2 class="nav-header">Goals</h2></li></a
+          >
         </ul>
       </div>
     </nav>
@@ -69,12 +75,12 @@
         </a>
       </div>
       <div class="card flex-container">
-        <a class="card-a" href="#about-me">
+        <a class="card-a" href="#interests">
           <h2 class="card-text">Interests</h2>
         </a>
       </div>
       <div class="card flex-container">
-        <a class="card-a" href="#about-me">
+        <a class="card-a" href="#goals">
           <h2 class="card-text">Goals</h2>
         </a>
       </div>
@@ -84,7 +90,7 @@
       <div class="separator"></div>
     </div>
 
-    <article class="flex-container info-wrapper">
+    <article class="flex-container info-wrapper" id="about-me">
       <div class="info-box">
         <h2 class="info-header caps-heading">About Me</h2>
         <p class="info-text">
@@ -108,7 +114,7 @@
       <div class="separator"></div>
     </div>
 
-    <article class="flex-container info-wrapper">
+    <article class="flex-container info-wrapper" id="interests">
       <div class="info-img-box">
         <a href="https://unsplash.com/photos/gNzqerPFtWs"
           ><img
@@ -118,8 +124,8 @@
         /></a>
       </div>
       <div class="info-box">
-        <h2 class="info-header caps-heading">Interests</h2>
-        <p class="info-text">
+        <h2 class="info-header-right caps-heading">Interests</h2>
+        <p class="info-text-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
           ab eligendi odio atque quam quis, voluptatem sunt? Corporis inventore
           ex quaerat alias! Perferendis sapiente atque quam ad reprehenderit
@@ -132,7 +138,7 @@
       <div class="separator"></div>
     </div>
 
-    <article class="flex-container info-wrapper">
+    <article class="flex-container info-wrapper" id="goals">
       <div class="info-box">
         <h2 class="info-header caps-heading">Goals</h2>
         <p class="info-text">

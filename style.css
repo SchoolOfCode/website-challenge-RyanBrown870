@@ -44,6 +44,16 @@ li.nav {
   padding: 2rem 3.5rem 1.5rem 4rem;
 }
 
+ul a {
+  color: #6f94ad;
+}
+
+ul a:hover {
+  color: #19547b;
+  border-bottom: solid;
+  border-width: 2px;
+}
+
 #greeting {
   color: white;
   position: absolute;
@@ -189,12 +199,24 @@ a {
   padding: 0.5rem 2rem 0rem 1rem;
 }
 
+.info-header-right,
+.info-text-right {
+  width: 100%;
+  padding: 0.5rem 1rem 0rem 2.5rem;
+}
+
+.info-header-right {
+  color: #36698c;
+  margin-bottom: 0.5rem;
+}
+
 .info-header {
   color: #36698c;
   margin-bottom: 0.5rem;
 }
 
-.info-text {
+.info-text,
+.info-text-right {
   font-size: 1.7rem;
 }
 
