@@ -20,15 +20,35 @@ h3 {
 p {
   line-height: 1.5;
   color: #19547b;
+  font-size: 2rem;
 }
 
 #banner {
   height: 5rem;
   align-items: center;
+  justify-content: space-between;
+}
+
+.nav-border-gradient {
+  border-top: 4px solid;
+  border-image-slice: 1;
+  border-top-width: 4px;
+}
+
+.nav-border-jupiter {
+  border-image-source: #ffd89b; /* fallback for old browsers */
+  border-image-source: -webkit-linear-gradient(
+    to right,
+    #19547b,
+    #ffd89b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  border-image-source: linear-gradient(to right, #19547b, #ffd89b);
 }
 
 #logo {
   flex-grow: 1;
+  font-family: 'Brush Script MT', cursive;
+  padding: 2rem 3.5rem 2rem 1.5rem;
 }
 
 #nav-wrapper {
@@ -41,7 +61,8 @@ li.nav {
 }
 
 .nav {
-  padding: 2rem 3.5rem 1.5rem 4rem;
+  padding: 2rem 3.5rem 2rem 4rem;
+  /* border-bottom: 0.2rem solid; */
 }
 
 ul a {
