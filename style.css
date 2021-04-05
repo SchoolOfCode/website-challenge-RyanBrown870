@@ -6,6 +6,10 @@ animate name, slide in from side. Flashing full stop
 
 */
 
+html {
+  font-size: 12px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,7 +30,30 @@ p {
 #banner {
   height: 5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.menu-container {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  z-index: 1;
+  padding-left: 2rem;
+  background-color: white;
+}
+
+.menu-container ul li {
+  float: left;
+  line-height: 32px;
+  width: 80px;
+}
+
+.menu-container ul li:hover ul {
+  display: block;
+}
+
+.menu-container ul li ul {
+  display: none;
 }
 
 .nav-border-gradient {
@@ -48,10 +75,11 @@ p {
 #logo {
   flex-grow: 1;
   font-family: 'Brush Script MT', cursive;
-  padding: 2rem 3.5rem 2rem 1.5rem;
+  padding: 2rem 2rem 2rem 1.5rem;
 }
 
 #nav-wrapper {
+  display: none;
   flex-grow: 4;
   justify-content: flex-end;
 }
@@ -62,7 +90,6 @@ li.nav {
 
 .nav {
   padding: 2rem 3.5rem 2rem 4rem;
-  /* border-bottom: 0.2rem solid; */
 }
 
 ul a {
@@ -78,7 +105,7 @@ ul a:hover {
 #greeting {
   color: white;
   position: absolute;
-  font-size: 7rem;
+  font-size: 4.5rem;
   left: 7rem;
   top: 7rem;
 }
@@ -89,7 +116,7 @@ ul a:hover {
 }
 
 #landing-title {
-  height: 46rem;
+  height: 40rem;
   position: relative;
   background: #ffd89b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -163,8 +190,7 @@ a {
 /* Cards */
 
 #card-wrapper {
-  justify-content: center;
-  margin-bottom: 4rem;
+  display: none;
 }
 
 .card {
@@ -203,15 +229,15 @@ a {
 }
 
 .info-wrapper {
-  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
   padding: 3rem 0rem;
 }
 
 .info-box {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
+  width: 80%;
 }
 
 .info-header,
@@ -242,7 +268,7 @@ a {
 }
 
 .info-img-box {
-  width: 45%;
+  width: 80%;
 }
 
 .info-img {
@@ -277,25 +303,75 @@ a {
 }
 
 /* laptops */
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   html {
     font-size: 16px;
+  }
+
+  #interests {
+    flex-direction: row-reverse;
+  }
+
+  #banner {
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  #nav-wrapper {
+    display: flex;
+    flex-grow: 4;
+    justify-content: flex-end;
+  }
+
+  #logo {
+    flex-grow: 1;
+    font-family: 'Brush Script MT', cursive;
+    padding: 2rem 3.5rem 2rem 1.5rem;
+  }
+
+  #greeting {
+    color: white;
+    position: absolute;
+    font-size: 7rem;
+    left: 7rem;
+    top: 7rem;
+  }
+
+  #landing-title {
+    height: 46rem;
+  }
+
+  .info-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0rem;
+  }
+
+  #card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
   }
 }
 
 /* To do: add query for greeting background size and greeting text */
 /* smartphones */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   html {
     font-size: 12px;
   }
 
-  .item {
+  /* .item {
     flex-grow: 1;
     width: 1rem;
   }
 
   #summary-wrapper {
     flex-grow: 3;
-  }
-}
+  } */
+/* } */
