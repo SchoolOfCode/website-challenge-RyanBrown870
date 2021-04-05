@@ -40,6 +40,7 @@ p {
   z-index: 1;
   padding-left: 2rem;
   background-color: white;
+  font-size: 1.2rem;
 }
 
 .menu-container ul li {
@@ -54,6 +55,16 @@ p {
 
 .menu-container ul li ul {
   display: none;
+}
+
+.menu-header {
+  color: #19547b;
+  font-weight: bold;
+}
+
+.menu-text {
+  font-size: 1.2rem;
+  line-height: 32px;
 }
 
 .nav-border-gradient {
@@ -187,33 +198,6 @@ a {
   color: white;
 }
 
-/* Cards */
-
-#card-wrapper {
-  display: none;
-}
-
-.card {
-  margin: 1.2rem;
-  width: 25%;
-  height: 200px;
-  background-color: #19547b;
-}
-
-.card-a {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-text {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
 /* Info section */
 
 .separator-container {
@@ -238,18 +222,17 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  padding-top: 1rem;
 }
 
 .info-header,
 .info-text {
   width: 100%;
-  padding: 0.5rem 2rem 0rem 1rem;
 }
 
 .info-header-right,
 .info-text-right {
   width: 100%;
-  padding: 0.5rem 1rem 0rem 2.5rem;
 }
 
 .info-header-right {
@@ -272,7 +255,6 @@ a {
 }
 
 .info-img {
-  /* padding: 1rem 2rem; */
   background: none;
 }
 
@@ -349,29 +331,18 @@ a {
   .info-wrapper {
     flex-direction: row;
     justify-content: center;
-    padding: 3rem 0rem;
+    padding: 3rem 2rem;
   }
 
-  #card-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
+  .info-header,
+  .info-text {
+    width: 100%;
+    padding: 0.5rem 2rem 0rem 1rem;
+  }
+
+  .info-header-right,
+  .info-text-right {
+    width: 100%;
+    padding: 0.5rem 1rem 0rem 2.5rem;
   }
 }
-
-/* To do: add query for greeting background size and greeting text */
-/* smartphones */
-/* @media (max-width: 767px) {
-  html {
-    font-size: 12px;
-  }
-
-  /* .item {
-    flex-grow: 1;
-    width: 1rem;
-  }
-
-  #summary-wrapper {
-    flex-grow: 3;
-  } */
-/* } */
