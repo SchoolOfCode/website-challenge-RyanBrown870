@@ -113,12 +113,22 @@ ul a:hover {
   border-width: 2px;
 }
 
-#greeting {
-  color: white;
-  position: absolute;
-  font-size: 4.5rem;
-  left: 7rem;
-  top: 7rem;
+.header-container {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+#stop {
+  display: inline-block;
+  font-size: 7.5rem;
+  animation: flash 1s step-start infinite;
+  animation-delay: 1.2s;
 }
 
 .flex-container {
@@ -140,6 +150,29 @@ ul a:hover {
     #19547b,
     #ffd89b
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    left: 7rem;
+  }
+}
+
+#greeting {
+  color: white;
+  position: absolute;
+  font-size: 5rem;
+  left: 7rem;
+  top: 7rem;
+  animation: appear 1.5s ease 1;
+  /* animation-delay: 0.5s; */
 }
 
 #summary-section {
@@ -167,6 +200,7 @@ ul a:hover {
 #summary-tagline {
   font-size: 1.6rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #19547b;
 }
 
@@ -188,7 +222,7 @@ a {
   border-radius: 20px;
   padding: 12px 25px;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition-duration: 200ms;
 }
@@ -284,7 +318,40 @@ a {
   border-image-source: linear-gradient(to left, #19547b, #ffd89b);
 }
 
-/* laptops */
+footer {
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  background: #ffd89b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #19547b,
+    #ffd89b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #19547b, #ffd89b);
+}
+
+.footer-text {
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer-separator {
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.footer-separator:before {
+  content: '-';
+}
+
+footer a:hover {
+  border-bottom: solid;
+  border-color: white;
+}
+
+/* Tablets & Laptops */
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -324,8 +391,16 @@ a {
     top: 7rem;
   }
 
+  #stop {
+    font-size: 9.5rem;
+  }
+
   #landing-title {
     height: 46rem;
+  }
+
+  .button {
+    font-size: 1rem;
   }
 
   .info-wrapper {
