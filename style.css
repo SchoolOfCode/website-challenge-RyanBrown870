@@ -37,7 +37,7 @@ p {
   justify-content: flex-end;
 }
 
-.menu-container {
+.menu {
   position: absolute;
   left: 0;
   top: 17px;
@@ -47,26 +47,26 @@ p {
   font-size: 1.2rem;
 }
 
-.menu-container ul li {
+.menu ul li {
   float: left;
   line-height: 32px;
   width: 80px;
 }
 
-.menu-container ul li:hover ul {
+.menu ul li:hover ul {
   display: block;
 }
 
-.menu-container ul li ul {
+.menu ul li ul {
   display: none;
 }
 
-.menu-header {
+.menu__header {
   color: #19547b;
   font-weight: bold;
 }
 
-.menu-text {
+.menu__text {
   font-size: 1.2rem;
   line-height: 32px;
 }
@@ -403,7 +403,7 @@ footer a:hover {
     justify-content: space-between;
   }
 
-  .menu-container {
+  .menu {
     display: none;
   }
 
