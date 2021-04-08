@@ -182,29 +182,29 @@ ul a:hover {
 
 /* Summary section */
 
-#summary-section {
+.summary {
   text-align: center;
   position: relative;
   margin: 3rem 0rem 2rem 0rem;
 }
 
-#summary-wrapper {
+.summary__wrapper {
   flex-grow: 3;
 }
 
-.item {
+.summary__item {
   flex-grow: 1;
   width: 2rem;
 }
 
-.caps-heading {
+.summary__title--caps {
   color: #19547b;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-#summary-tagline {
+.summary__tagline {
   font-size: 1.6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
