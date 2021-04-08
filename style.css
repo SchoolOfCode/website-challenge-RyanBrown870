@@ -1,11 +1,3 @@
-/*  To do: 
-
-background image gradient, 
-coloured foreground for text
-animate name, slide in from side. Flashing full stop
-
-*/
-
 html {
   font-size: 12px;
 }
@@ -37,13 +29,15 @@ p {
   font-size: 2rem;
 }
 
+/* Navbar */
+
 #banner {
   height: 5rem;
   align-items: center;
   justify-content: flex-end;
 }
 
-.menu-container {
+.menu {
   position: absolute;
   left: 0;
   top: 17px;
@@ -53,26 +47,26 @@ p {
   font-size: 1.2rem;
 }
 
-.menu-container ul li {
+.menu ul li {
   float: left;
   line-height: 32px;
   width: 80px;
 }
 
-.menu-container ul li:hover ul {
+.menu ul li:hover ul {
   display: block;
 }
 
-.menu-container ul li ul {
+.menu ul li ul {
   display: none;
 }
 
-.menu-header {
+.menu__header {
   color: #19547b;
   font-weight: bold;
 }
 
-.menu-text {
+.menu__text {
   font-size: 1.2rem;
   line-height: 32px;
 }
@@ -99,17 +93,17 @@ p {
   padding: 2rem 2rem 2rem 1.5rem;
 }
 
-#nav-wrapper {
+.nav {
   display: none;
   flex-grow: 4;
   justify-content: flex-end;
 }
 
-li.nav {
+li.nav__item {
   float: left;
 }
 
-.nav {
+.nav__item {
   padding: 2rem 3.5rem 2rem 4rem;
 }
 
@@ -122,6 +116,8 @@ ul a:hover {
   border-bottom: solid;
   border-width: 2px;
 }
+
+/* Header */
 
 .header-container {
   width: 100%;
@@ -146,7 +142,7 @@ ul a:hover {
   flex-direction: row;
 }
 
-#landing-title {
+.landing-title {
   height: 40rem;
   position: relative;
   background: #ffd89b; /* fallback for old browsers */
@@ -175,46 +171,47 @@ ul a:hover {
   }
 }
 
-#greeting {
+.landing-title__greeting {
   color: white;
   position: absolute;
   font-size: 5rem;
   left: 7rem;
   top: 7rem;
   animation: appear 1.5s ease 1;
-  /* animation-delay: 0.5s; */
 }
 
-#summary-section {
+/* Summary section */
+
+.summary {
   text-align: center;
   position: relative;
   margin: 3rem 0rem 2rem 0rem;
 }
 
-#summary-wrapper {
+.summary__wrapper {
   flex-grow: 3;
 }
 
-.item {
+.summary__item {
   flex-grow: 1;
   width: 2rem;
 }
 
-.caps-heading {
+.summary__title--caps {
   color: #19547b;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-#summary-tagline {
+.summary__tagline {
   font-size: 1.6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #19547b;
 }
 
-#learn-more {
+.summary__button {
   margin: 2rem 0rem 1.5rem 0rem;
 }
 
@@ -223,7 +220,7 @@ a {
   color: #19547b;
 }
 
-.button {
+.summary__button--background {
   line-height: 1.5rem;
   border-style: solid;
   border-color: #19547b;
@@ -237,26 +234,26 @@ a {
   transition-duration: 200ms;
 }
 
-.button:hover {
+.summary__button--background:hover {
   background-color: #19547b;
   color: white;
 }
 
 /* Info section */
 
-.separator-container {
+.separator {
   display: flex;
   justify-content: center;
 }
 
-.separator {
+.separator__line {
   width: 90%;
   border-top: solid;
   border-color: #6f94ad;
   border-width: 1px;
 }
 
-.info-wrapper {
+.info {
   flex-direction: column-reverse;
   align-items: center;
   padding: 3rem 0rem;
@@ -269,28 +266,35 @@ a {
   padding-top: 1rem;
 }
 
-.info-header,
-.info-text {
+.info-box__header,
+.info-box__text {
   width: 100%;
 }
 
-.info-header-right,
-.info-text-right {
+.info-box__header--caps {
+  color: #19547b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info-box__header-right,
+.info-box__text-right {
   width: 100%;
 }
 
-.info-header-right {
+.info-box__header-right {
   color: #36698c;
   margin-bottom: 0.5rem;
 }
 
-.info-header {
+.info-box__header {
   color: #36698c;
   margin-bottom: 0.5rem;
 }
 
-.info-text,
-.info-text-right {
+.info-box__text,
+.info-box__text-right {
   font-size: 1.7rem;
 }
 
@@ -298,7 +302,7 @@ a {
   width: 80%;
 }
 
-.info-img {
+.info-img-box__img {
   background: none;
 }
 
@@ -328,32 +332,36 @@ a {
   border-image-source: linear-gradient(to left, #19547b, #ffd89b);
 }
 
-.quote-container {
+/* Quote */
+
+.quote {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.quote {
+.quote__box {
   padding: 2rem;
   color: #19547b;
   width: 90%;
 }
 
-.quote blockquote {
+.quote__box blockquote {
   font-size: 1.7rem;
   text-align: center;
   font-style: italic;
 }
 
-.quote h2 {
+.quote__box h2 {
   padding-top: 1rem;
   font-size: 1.4rem;
   font-weight: normal;
   text-align: center;
 }
 
-footer {
+/* Footer section */
+
+.footer {
   height: 5rem;
   align-items: center;
   justify-content: center;
@@ -366,22 +374,22 @@ footer {
   background: linear-gradient(to right, #19547b, #ffd89b);
 }
 
-.footer-text {
+.footer__text {
   font-weight: normal;
   font-size: 1rem;
   color: white;
 }
 
-.footer-separator {
+.footer__text__separator {
   color: white;
   padding: 0rem 1rem;
 }
 
-.footer-separator:before {
+.footer__text__separator:before {
   content: '-';
 }
 
-footer a:hover {
+.footer a:hover {
   border-bottom: solid;
   border-color: white;
 }
@@ -402,11 +410,11 @@ footer a:hover {
     justify-content: space-between;
   }
 
-  .menu-container {
+  .menu {
     display: none;
   }
 
-  #nav-wrapper {
+  .nav {
     display: flex;
     flex-grow: 4;
     justify-content: flex-end;
@@ -418,7 +426,7 @@ footer a:hover {
     padding: 2rem 3.5rem 2rem 1.5rem;
   }
 
-  #greeting {
+  .landing-title__greeting {
     color: white;
     position: absolute;
     font-size: 7rem;
@@ -430,33 +438,33 @@ footer a:hover {
     font-size: 9.5rem;
   }
 
-  #landing-title {
+  .landing-title {
     height: 46rem;
   }
 
-  .button {
+  .summary__button--background {
     font-size: 1rem;
   }
 
-  .info-wrapper {
+  .info {
     flex-direction: row;
     justify-content: center;
     padding: 3rem 2rem;
   }
 
-  .info-header,
-  .info-text {
+  .info-box__header,
+  .info-box__text {
     width: 100%;
     padding: 0.5rem 2rem 0rem 1rem;
   }
 
-  .info-header-right,
-  .info-text-right {
+  .info-box__header-right,
+  .info-box__text-right {
     width: 100%;
     padding: 0.5rem 1rem 0rem 2.5rem;
   }
 
-  .quote h2 {
+  .quote__box h2 {
     padding: 1rem 0rem 0rem 5rem;
     font-size: 1.4rem;
     font-weight: normal;

@@ -7,8 +7,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Profile</title>
-    <meta name="description" content="" />
+    <title>Jordan Linton Profile</title>
+    <meta name="Profile Page for Jordan Linton" content="Developer profile for Jordan Linton showing about me, interests and goals"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -25,74 +25,74 @@
       class="flex-container nav-border-gradient nav-border-jupiter"
       id="banner"
     >
-      <div class="menu-container">
+      <div class="menu">
         <ul>
           <li>
-            <a class="menu-header">Menu</a>
+            <a class="menu__header">Menu</a>
             <ul>
               <a href="#about-me"
-                ><li><p class="menu-text">About Me</p></li></a
+                ><li><p class="menu__text">About Me</p></li></a
               >
               <a href="#interests"
-                ><li><p class="menu-text">Interests</p></li></a
+                ><li><p class="menu__text">Interests</p></li></a
               >
               <a href="#goals"
-                ><li><p class="menu-text">Goals</p></li></a
+                ><li><p class="menu__text">Goals</p></li></a
               >
             </ul>
           </li>
         </ul>
       </div>
       <a href="#summary-title">
-        <p class="nav" id="logo">J. Linton</p>
+        <p class="nav__item" id="logo">J. Linton</p>
       </a>
 
-      <div class="flex-container" id="nav-wrapper">
+      <div class="nav">
         <ul>
           <a href="#about-me"
-            ><li class="nav"><h2 class="nav-header">About Me</h2></li></a
+            ><li class="nav__item"><h2>About Me</h2></li></a
           >
           <a href="#interests"
-            ><li class="nav"><h2 class="nav-header">Interests</h2></li></a
+            ><li class="nav__item"><h2>Interests</h2></li></a
           >
           <a href="#goals"
-            ><li class="nav"><h2 class="nav-header">Goals</h2></li></a
+            ><li class="nav__item"><h2>Goals</h2></li></a
           >
         </ul>
       </div>
     </nav>
 
     <header>
-      <div id="landing-title">
-        <h1 id="greeting">Hi, I'm Jordan Linton<span id="stop">.</span></h1>
+      <div class="landing-title">
+        <h1 class="landing-title__greeting">Hi, I'm Jordan Linton<span id="stop">.</span></h1>
       </div>
     </header>
 
-    <main class="flex-container" id="summary-section">
-      <div class="item"></div>
-      <div class="item" id="summary-wrapper">
-        <h2 class="caps-heading" id="summary-title">I'm a web developer</h2>
-        <h3 id="summary-tagline">
+    <main class="flex-container summary">
+      <div class="summary__item"></div>
+      <div class="summary__item summary__wrapper">
+        <h2 class="summary__title--caps">I'm a web developer</h2>
+        <h3 class="summary__tagline">
           Here in Birmingham, where it all started. I'm honing my web
           development skills and starting an exciting journey.
         </h3>
-        <div id="learn-more">
-          <a class="button background-transition" href="#about-me"
+        <div class="summary__button">
+          <a class="summary__button--background" href="#about-me"
             >Learn more</a
           >
         </div>
       </div>
-      <div class="item"></div>
+      <div class="summary__item"></div>
     </main>
 
-    <div class="separator-container">
-      <div class="separator"></div>
+    <div class="separator">
+      <div class="separator__line"></div>
     </div>
 
-    <section class="flex-container info-wrapper" id="about-me">
+    <section class="flex-container info" id="about-me">
       <div class="info-box">
-        <h2 class="info-header caps-heading">About Me</h2>
-        <p class="info-text">
+        <h2 class="info-box__header info-box__header--caps">About Me</h2>
+        <p class="info-box__text">
           I've hung up my forklift driving gloves to take on a new challenge,
           trading in night-shifts for coffee and coding.
         </p>
@@ -102,19 +102,19 @@
           ><img
             src="https://source.unsplash.com/TMpqNhMunQY"
             alt="Balloon photo by Andreas Weiland from Unsplash.com"
-            class="info-img border-gradient border-gradient-jupiter"
+            class="info-img-box__img border-gradient border-gradient-jupiter"
         /></a>
       </div>
     </section>
 
-    <div class="separator-container">
-      <div class="separator"></div>
+    <div class="separator">
+      <div class="separator__line"></div>
     </div>
 
-    <section class="flex-container info-wrapper" id="interests">
+    <section class="flex-container info" id="interests">
       <div class="info-box">
-        <h2 class="info-header-right caps-heading">Interests</h2>
-        <p class="info-text-right">
+        <h2 class="info-box__header-right info-box__header--caps">Interests</h2>
+        <p class="info-box__text-right">
           When I'm not working on my GAINS and looking after my two rabbits, you
           can find me at the cinema or jet-skiing around the Med.
         </p>
@@ -124,19 +124,19 @@
           ><img
             src="https://source.unsplash.com/gNzqerPFtWs"
             alt="Weights photo by Adam Wilson from unsplash.com"
-            class="info-img border-gradient border-gradient-reverse"
+            class="info-img-box__img border-gradient border-gradient-reverse"
         /></a>
       </div>
     </section>
 
-    <div class="separator-container">
-      <div class="separator"></div>
+    <div class="separator">
+      <div class="separator__line"></div>
     </div>
 
-    <section class="flex-container info-wrapper" id="goals">
+    <section class="flex-container info" id="goals">
       <div class="info-box">
-        <h2 class="info-header caps-heading">Goals</h2>
-        <p class="info-text">
+        <h2 class="info-box__header info-box__header--caps">Goals</h2>
+        <p class="info-box__text">
           I've committed to becoming a web-developer, ultimately with the aim of
           being full-stack and working on side projects on my Raspberry Pi.
         </p>
@@ -146,32 +146,31 @@
           ><img
             src="https://source.unsplash.com/siNDDi9RpVY"
             alt="Photo of dog with laptop by Cookie the Pom from unsplash.com"
-            class="info-img border-gradient border-gradient-jupiter"
+            class="info-img-box__img border-gradient border-gradient-jupiter"
         /></a>
       </div>
     </section>
 
-    <section class="quote-container">
-      <div class="quote">
+    <section class="quote">
+      <div class="quote__box">
         <blockquote>"We are what we repeatedly do. Excellence, then, is not an act, but a habit."</blockquote>
        <h2>Aristotle</h2>
       </div>      
     </section>
 
-    <footer class="flex-container">
-      <h3 class="footer-text">
+    <footer class="flex-container footer">
+      <h3 class="footer__text">
         &copy; 2021 Jordan Linton</h3>
-        <span class="footer-separator"></span>
+        <span class="footer__text__separator"></span>
         
-          <a href="https://github.com/Jordaneddielinton93"><h3 class="footer-text">Github</h3>
+          <a href="https://github.com/Jordaneddielinton93"><h3 class="footer__text">Github</h3>
           </a>
        
-        <span class="footer-separator"></span>
-        <a><h3 class="footer-text">
+        <span class="footer__text__separator"></span>
+        <a><h3 class="footer__text">
           Twitter
         </h3></a>
       </h3>
-      <!-- copyright, terms, contact, github etc -->
     </footer>
   </body>
 </html>
