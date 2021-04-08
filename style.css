@@ -142,7 +142,7 @@ ul a:hover {
   flex-direction: row;
 }
 
-#landing-title {
+.landing-title {
   height: 40rem;
   position: relative;
   background: #ffd89b; /* fallback for old browsers */
@@ -171,7 +171,7 @@ ul a:hover {
   }
 }
 
-#greeting {
+.landing-title__greeting {
   color: white;
   position: absolute;
   font-size: 5rem;
@@ -419,7 +419,7 @@ footer a:hover {
     padding: 2rem 3.5rem 2rem 1.5rem;
   }
 
-  #greeting {
+  .landing-title__greeting {
     color: white;
     position: absolute;
     font-size: 7rem;
@@ -431,7 +431,7 @@ footer a:hover {
     font-size: 9.5rem;
   }
 
-  #landing-title {
+  .landing-title {
     height: 46rem;
   }
 
