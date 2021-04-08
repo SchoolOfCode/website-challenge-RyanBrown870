@@ -211,7 +211,7 @@ ul a:hover {
   color: #19547b;
 }
 
-#learn-more {
+.summary__button {
   margin: 2rem 0rem 1.5rem 0rem;
 }
 
@@ -220,7 +220,7 @@ a {
   color: #19547b;
 }
 
-.button {
+.summary__button--background {
   line-height: 1.5rem;
   border-style: solid;
   border-color: #19547b;
@@ -234,7 +234,7 @@ a {
   transition-duration: 200ms;
 }
 
-.button:hover {
+.summary__button--background:hover {
   background-color: #19547b;
   color: white;
 }
@@ -435,7 +435,7 @@ footer a:hover {
     height: 46rem;
   }
 
-  .button {
+  .summary__button--background {
     font-size: 1rem;
   }
 
