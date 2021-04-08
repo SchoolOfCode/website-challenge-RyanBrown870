@@ -1,11 +1,3 @@
-/*  To do: 
-
-background image gradient, 
-coloured foreground for text
-animate name, slide in from side. Flashing full stop
-
-*/
-
 html {
   font-size: 12px;
 }
@@ -36,6 +28,8 @@ p {
   color: #19547b;
   font-size: 2rem;
 }
+
+/* Navbar */
 
 #banner {
   height: 5rem;
@@ -123,6 +117,8 @@ ul a:hover {
   border-width: 2px;
 }
 
+/* Header */
+
 .header-container {
   width: 100%;
   height: 100%;
@@ -182,8 +178,9 @@ ul a:hover {
   left: 7rem;
   top: 7rem;
   animation: appear 1.5s ease 1;
-  /* animation-delay: 0.5s; */
 }
+
+/* Summary section */
 
 #summary-section {
   text-align: center;
@@ -328,6 +325,8 @@ a {
   border-image-source: linear-gradient(to left, #19547b, #ffd89b);
 }
 
+/* Quote */
+
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -352,6 +351,8 @@ a {
   font-weight: normal;
   text-align: center;
 }
+
+/* Footer section */
 
 footer {
   height: 5rem;
