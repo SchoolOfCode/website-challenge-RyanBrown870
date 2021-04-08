@@ -241,12 +241,12 @@ a {
 
 /* Info section */
 
-.separator-container {
+.separator {
   display: flex;
   justify-content: center;
 }
 
-.separator {
+.separator__line {
   width: 90%;
   border-top: solid;
   border-color: #6f94ad;
