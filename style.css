@@ -334,25 +334,25 @@ a {
 
 /* Quote */
 
-.quote-container {
+.quote {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.quote {
+.quote__box {
   padding: 2rem;
   color: #19547b;
   width: 90%;
 }
 
-.quote blockquote {
+.quote__box blockquote {
   font-size: 1.7rem;
   text-align: center;
   font-style: italic;
 }
 
-.quote h2 {
+.quote__box h2 {
   padding-top: 1rem;
   font-size: 1.4rem;
   font-weight: normal;
@@ -361,7 +361,7 @@ a {
 
 /* Footer section */
 
-footer {
+.footer {
   height: 5rem;
   align-items: center;
   justify-content: center;
@@ -374,22 +374,22 @@ footer {
   background: linear-gradient(to right, #19547b, #ffd89b);
 }
 
-.footer-text {
+.footer__text {
   font-weight: normal;
   font-size: 1rem;
   color: white;
 }
 
-.footer-separator {
+.footer__text__separator {
   color: white;
   padding: 0rem 1rem;
 }
 
-.footer-separator:before {
+.footer__text__separator:before {
   content: '-';
 }
 
-footer a:hover {
+.footer a:hover {
   border-bottom: solid;
   border-color: white;
 }
@@ -464,7 +464,7 @@ footer a:hover {
     padding: 0.5rem 1rem 0rem 2.5rem;
   }
 
-  .quote h2 {
+  .quote__box h2 {
     padding: 1rem 0rem 0rem 5rem;
     font-size: 1.4rem;
     font-weight: normal;
