@@ -24,7 +24,6 @@ h6 {
 }
 
 p {
-  line-height: 1.5;
   color: #19547b;
   font-size: 2rem;
 }
@@ -88,7 +87,6 @@ p {
 }
 
 #logo {
-  flex-grow: 1;
   font-family: 'Brush Script MT', cursive;
   padding: 2rem 2rem 2rem 1.5rem;
 }
@@ -119,11 +117,6 @@ ul a:hover {
 
 /* Header */
 
-.header-container {
-  width: 100%;
-  height: 100%;
-}
-
 @keyframes flash {
   50% {
     opacity: 0;
@@ -139,7 +132,6 @@ ul a:hover {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
 }
 
 .landing-title {
@@ -186,15 +178,8 @@ ul a:hover {
   text-align: center;
   position: relative;
   margin: 3rem 0rem 2rem 0rem;
-}
-
-.summary__wrapper {
-  flex-grow: 3;
-}
-
-.summary__item {
-  flex-grow: 1;
-  width: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .summary__title--caps {
@@ -205,10 +190,11 @@ ul a:hover {
 }
 
 .summary__tagline {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #19547b;
+  width: 60%;
 }
 
 .summary__button {
