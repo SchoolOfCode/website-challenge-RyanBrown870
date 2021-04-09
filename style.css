@@ -463,11 +463,4 @@ a {
     width: 100%;
     padding: 0.5rem 1rem 0rem 2.5rem;
   }
-
-  .quote__box h2 {
-    padding: 1rem 0rem 0rem 5rem;
-    font-size: 1.4rem;
-    font-weight: normal;
-    text-align: left;
-  }
 }
