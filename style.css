@@ -125,7 +125,7 @@ ul a:hover {
 
 #stop {
   display: inline-block;
-  font-size: 7.5rem;
+  /* font-size: 7.5rem; */
   animation: flash 1s step-start infinite;
   animation-delay: 1.2s;
 }
@@ -170,6 +170,7 @@ ul a:hover {
   left: 7rem;
   top: 7rem;
   animation: appear 1.5s ease 1;
+  width: 70%;
 }
 
 /* Summary section */
@@ -448,5 +449,18 @@ a {
   .info-box__text-right {
     width: 100%;
     padding: 0.5rem 1rem 0rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1052px) {
+  .landing-title__greeting {
+    width: 85%;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-title__greeting {
+    font-size: 8rem;
   }
 }
